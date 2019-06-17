@@ -1,0 +1,159 @@
+INFO  17-58-2019 22:58:01 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/   
+INFO  17-58-2019 22:58:01 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executing endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  17-58-2019 22:58:01 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [6] - Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoffeeRenoTemplate.Controllers.HomeController (CoffeeRenoTemplate). 
+INFO  17-58-2019 22:58:01 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [6] - Executing action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) - Validation state: Valid 
+INFO  17-58-2019 22:58:01 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [6] - Executed action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2471ms. 
+INFO  17-58-2019 22:58:01 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor [6] - Executing ViewResult, running view Index. 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor [6] - Executed ViewResult - view Index executed in 554.0535ms. 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [6] - Executed action CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) in 586.6839ms 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executed endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 796.7292ms 200 text/html; charset=utf-8 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request starting HTTP/2.0 GET https://localhost:44381/lib/bootstrap/dist/js/bootstrap.bundle.js   
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request starting HTTP/2.0 GET https://localhost:44381/lib/jquery/dist/jquery.js   
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [13] - Request starting HTTP/2.0 GET https://localhost:44381/css/site.css   
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [14] - Request starting HTTP/2.0 GET https://localhost:44381/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [15] - Request starting HTTP/2.0 GET https://localhost:44381/lib/bootstrap/dist/css/bootstrap.css   
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [7] - The file /lib/jquery/dist/jquery.js was not modified 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [14] - The file /js/site.js was not modified 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [10] - The file /lib/bootstrap/dist/js/bootstrap.bundle.js was not modified 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [13] - The file /css/site.css was not modified 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [15] - The file /lib/bootstrap/dist/css/bootstrap.css was not modified 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [15] - Request finished in 65.2937ms 304 text/css 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request finished in 73.5969ms 304 application/javascript 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request finished in 73.6377ms 304 application/javascript 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [14] - Request finished in 59.7461ms 304 application/javascript 
+INFO  17-58-2019 22:58:02 Microsoft.AspNetCore.Hosting.Internal.WebHost [13] - Request finished in 65.2225ms 304 text/css 
+INFO  17-58-2019 22:58:08 Microsoft.AspNetCore.Hosting.Internal.WebHost [14] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/Account/Login   
+INFO  17-58-2019 22:58:08 Microsoft.AspNetCore.Routing.EndpointMiddleware [14] - Executing endpoint 'Page: /Account/Login' 
+INFO  17-58-2019 22:58:08 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [14] - Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login 
+INFO  17-58-2019 22:58:08 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [14] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is Valid 
+INFO  17-58-2019 22:58:08 Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler [14] - AuthenticationScheme: Identity.External signed out. 
+INFO  17-58-2019 22:58:08 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [14] - Executed handler method OnGetAsync, returned result . 
+INFO  17-58-2019 22:58:08 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [14] - Executing an implicit handler method - ModelState is Valid 
+INFO  17-58-2019 22:58:08 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [14] - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [14] - Executed page /Account/Login in 182.7745ms 
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.Routing.EndpointMiddleware [14] - Executed endpoint 'Page: /Account/Login' 
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.Hosting.Internal.WebHost [14] - Request finished in 283.0521ms 200 text/html; charset=utf-8 
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.Hosting.Internal.WebHost [20] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/lib/jquery-validation/dist/jquery.validate.js   
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [6] - Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'N/A' 
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 15.8032ms 200 application/javascript 
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [20] - Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'N/A' 
+INFO  17-58-2019 22:58:09 Microsoft.AspNetCore.Hosting.Internal.WebHost [20] - Request finished in 23.7729ms 200 application/javascript 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [13] - Request starting HTTP/2.0 POST https://localhost:44381/Identity/Account/ExternalLogin?returnUrl=%2F application/x-www-form-urlencoded 200 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Routing.EndpointMiddleware [13] - Executing endpoint 'Page: /Account/ExternalLogin' 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [13] - Route matched with {page = "/Account/ExternalLogin", area = "Identity", action = "", controller = ""}. Executing page /Account/ExternalLogin 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [13] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel.OnPost - ModelState is Invalid 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [13] - Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.ChallengeResult. 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Mvc.ChallengeResult [13] - Executing ChallengeResult with authentication schemes (Facebook). 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Authentication.Facebook.FacebookHandler [13] - AuthenticationScheme: Facebook was challenged. 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [13] - Executed page /Account/ExternalLogin in 73.8094ms 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Routing.EndpointMiddleware [13] - Executed endpoint 'Page: /Account/ExternalLogin' 
+INFO  17-58-2019 22:58:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [13] - Request finished in 106.3584ms 302  
+INFO  17-58-2019 22:58:30 Microsoft.AspNetCore.Hosting.Internal.WebHost [13] - Request starting HTTP/2.0 GET https://localhost:44381/signin-facebook?code=AQBAYK-ms3GJv8IZ_RsDH16Ni1mzbMSjNXexjVEa4oXlFoYVlf_I71oFQXSFzG6GBjHoob1_maLK_-a8ihrdbsdMdQVvkRGQOJ6HKXSpPRknjoaXTWdFxCi2o8-0tNPZ-OgZhHqueephrRJ40CTnpCrBXBeLlkEQvO4wHiVRd78W72LwAtpLwJK5005WpRqrde9k0sW0xclHUT-0gsbHLlrF2E5lx5IKCjlD-Iz1RAW18qt9Cb-r6o5ZhhxmRO9nAiWk8NQ9qzFeOIynaheSnGrA9sc7PK08Ws8G4rQjNAy28PSXWx91OxcYv82zDOlLYb1q4us_eV907Yr0nTA5mar2&state=CfDJ8A-TFY1sfNhInQhE9dKSHpuW4rJVpBKcS0gha9Iqn49Kj35cCw0g5TMFLbV7tgHhNcYKLUrNClSCQgZCZsOazFF7KIq0zEQWnM-to3U5xIRtbYVA1jjdbMzdodGLzvcMwlgZIpt_ApT0bGTyorVn8slaOKR3wAI4n5ruR1b4oYzHMbzjmKlSgCvA2k-I29-vIbj7LeCg1Y2PFrgrgRVwC4RKFkmnmPhSLYf0EBpEzISMh_cxlH8LSUJwyfmDb_NISrsBvBjib1dWlxJq5If8uR0QfpM86RJHC5uGv3s3MAkxNDFAPDYA0gTIe--yQ5Greg   
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler [5] - AuthenticationScheme: Cookies signed in. 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Hosting.Internal.WebHost [5] - Request finished in 1053.4377ms 302  
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/Account/ExternalLogin?returnUrl=%2F&handler=Callback   
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Routing.EndpointMiddleware [9] - Executing endpoint 'Page: /Account/ExternalLogin' 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [9] - Route matched with {page = "/Account/ExternalLogin", area = "Identity", action = "", controller = ""}. Executing page /Account/ExternalLogin 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [9] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel.OnGetCallbackAsync - ModelState is Valid 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [9] - Executed handler method OnGetCallbackAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RedirectToRouteResult [9] - Executing RedirectToPageResult, redirecting to ./Login. 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [9] - Executed page /Account/ExternalLogin in 99.6885ms 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Routing.EndpointMiddleware [9] - Executed endpoint 'Page: /Account/ExternalLogin' 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request finished in 116.1637ms 302  
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/Account/Login?ReturnUrl=%2F   
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executing endpoint 'Page: /Account/Login' 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is Valid 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler [6] - AuthenticationScheme: Identity.External signed out. 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed handler method OnGetAsync, returned result . 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executing an implicit handler method - ModelState is Valid 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed page /Account/Login in 14.2603ms 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executed endpoint 'Page: /Account/Login' 
+INFO  17-58-2019 22:58:31 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 70.6531ms 200 text/html; charset=utf-8 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request starting HTTP/2.0 POST https://localhost:44381/Identity/Account/ExternalLogin?returnUrl=%2F application/x-www-form-urlencoded 241 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Routing.EndpointMiddleware [7] - Executing endpoint 'Page: /Account/ExternalLogin' 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [7] - Route matched with {page = "/Account/ExternalLogin", area = "Identity", action = "", controller = ""}. Executing page /Account/ExternalLogin 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [7] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel.OnPost - ModelState is Invalid 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [7] - Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.ChallengeResult. 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Mvc.ChallengeResult [7] - Executing ChallengeResult with authentication schemes (Google). 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Authentication.Google.GoogleHandler [7] - AuthenticationScheme: Google was challenged. 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [7] - Executed page /Account/ExternalLogin in 14.7214ms 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Routing.EndpointMiddleware [7] - Executed endpoint 'Page: /Account/ExternalLogin' 
+INFO  17-58-2019 22:58:42 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request finished in 28.2036ms 302  
+INFO  17-58-2019 22:58:45 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/signin-google?state=CfDJ8A-TFY1sfNhInQhE9dKSHps4Y_sTrnm9gTTkfKCAQjQaPOPepX_NilEH9ckJv9_9dQ25BY7gp7pKADsjocXjVt_vzb6fmUmA2QCcLkadBUHBkWUjjVYHRJQpWN0ZcyM8aq_tiP5VlgS0PoOzqk6u8WYtawq61wTYihBxefrrvRqJ26V8-Bw_SJxOfnI__OTVFgrk2wsdvt2pMxpv60r3sXBxyzrsY9wlSiMjZ-KO9xq4vhZGcJr3QK4kSQbkcrKrN-1Lej4GSkIoGQM2CPWb58jUoFsqRCkthvOGY5ycs_j13X1aylinz0V_vEs0XONSyA&code=4%2FawG-z7oCqijMr-mmXK4qxitYimzic-T2_IuJpOy7LM9rZXsO_64sYGozdggptp30oMDMoSxUqFlp_th0dp4VgD0&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&session_state=985b702fa32f47254ca834b7b0f84871ed4b8f83..f8b5&prompt=consent   
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler [6] - AuthenticationScheme: Cookies signed in. 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 570.9784ms 302  
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/Account/ExternalLogin?returnUrl=%2F&handler=Callback   
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executing endpoint 'Page: /Account/ExternalLogin' 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Route matched with {page = "/Account/ExternalLogin", area = "Identity", action = "", controller = ""}. Executing page /Account/ExternalLogin 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel.OnGetCallbackAsync - ModelState is Valid 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed handler method OnGetCallbackAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RedirectToRouteResult [6] - Executing RedirectToPageResult, redirecting to ./Login. 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed page /Account/ExternalLogin in 8.8903ms 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executed endpoint 'Page: /Account/ExternalLogin' 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 21.3594ms 302  
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/Account/Login?ReturnUrl=%2F   
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executing endpoint 'Page: /Account/Login' 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is Valid 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler [6] - AuthenticationScheme: Identity.External signed out. 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed handler method OnGetAsync, returned result . 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executing an implicit handler method - ModelState is Valid 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed page /Account/Login in 12.9775ms 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executed endpoint 'Page: /Account/Login' 
+INFO  17-58-2019 22:58:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 30.3812ms 200 text/html; charset=utf-8 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Hosting.Internal.WebHost [15] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/Account/Register   
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Routing.EndpointMiddleware [15] - Executing endpoint 'Page: /Account/Register' 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [15] - Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [15] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.RegisterModel.OnGet - ModelState is Valid 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [15] - Executed handler method OnGet, returned result . 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [15] - Executing an implicit handler method - ModelState is Valid 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [15] - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [15] - Executed page /Account/Register in 54.5581ms 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Routing.EndpointMiddleware [15] - Executed endpoint 'Page: /Account/Register' 
+INFO  17-58-2019 22:58:58 Microsoft.AspNetCore.Hosting.Internal.WebHost [15] - Request finished in 88.6224ms 200 text/html; charset=utf-8 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/Identity/Account/Login   
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executing endpoint 'Page: /Account/Login' 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is Valid 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler [6] - AuthenticationScheme: Identity.External signed out. 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed handler method OnGetAsync, returned result . 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executing an implicit handler method - ModelState is Valid 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker [6] - Executed page /Account/Login in 11.2237ms 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executed endpoint 'Page: /Account/Login' 
+INFO  17-59-2019 22:59:01 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 27.8719ms 200 text/html; charset=utf-8 
+INFO  17-59-2019 22:59:08 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/lib/bootstrap/dist/js/bootstrap.bundle.js.map   
+INFO  17-59-2019 22:59:08 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/lib/bootstrap/dist/css/bootstrap.css.map   
+INFO  17-59-2019 22:59:08 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [10] - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js.map'. Physical path: 'F:\My projects\CoffeeRenoTemplate\CoffeeRenoTemplate\CoffeeRenoTemplate\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map' 
+INFO  17-59-2019 22:59:08 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [14] - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'F:\My projects\CoffeeRenoTemplate\CoffeeRenoTemplate\CoffeeRenoTemplate\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map' 
+INFO  17-59-2019 22:59:08 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request finished in 43.1318ms 200 text/plain 
+INFO  17-59-2019 22:59:08 Microsoft.AspNetCore.Hosting.Internal.WebHost [14] - Request finished in 33.89ms 200 text/plain 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request starting HTTP/2.0 GET https://localhost:44381/   
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Routing.EndpointMiddleware [7] - Executing endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoffeeRenoTemplate.Controllers.HomeController (CoffeeRenoTemplate). 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executing action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) - Validation state: Valid 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executed action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4702ms. 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor [7] - Executing ViewResult, running view Index. 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor [7] - Executed ViewResult - view Index executed in 5.0282ms. 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executed action CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) in 13.6331ms 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Routing.EndpointMiddleware [7] - Executed endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  17-59-2019 22:59:23 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request finished in 28.5757ms 200 text/html; charset=utf-8 
+INFO  17-00-2019 23:00:15 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request starting HTTP/2.0 GET https://localhost:44381/   
+INFO  17-00-2019 23:00:15 Microsoft.AspNetCore.Routing.EndpointMiddleware [7] - Executing endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  17-00-2019 23:00:15 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoffeeRenoTemplate.Controllers.HomeController (CoffeeRenoTemplate). 
+INFO  17-00-2019 23:00:15 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executing action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) - Validation state: Valid 
+INFO  17-00-2019 23:00:31 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executed action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate), returned result Microsoft.AspNetCore.Mvc.ViewResult in 15520.414ms. 
+INFO  17-00-2019 23:00:31 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor [7] - Executing ViewResult, running view Index. 
+INFO  17-00-2019 23:00:31 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor [7] - Executed ViewResult - view Index executed in 447.0049ms. 
+INFO  17-00-2019 23:00:31 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executed action CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) in 15996.2142ms 
+INFO  17-00-2019 23:00:31 Microsoft.AspNetCore.Routing.EndpointMiddleware [7] - Executed endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  17-00-2019 23:00:31 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request finished in 16157.676ms 200 text/html; charset=utf-8 
+INFO  17-01-2019 23:01:00 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/   
+INFO  17-01-2019 23:01:00 Microsoft.AspNetCore.Routing.EndpointMiddleware [6] - Executing endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  17-01-2019 23:01:00 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [6] - Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoffeeRenoTemplate.Controllers.HomeController (CoffeeRenoTemplate). 
+INFO  17-01-2019 23:01:00 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [6] - Executing action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) - Validation state: Valid 

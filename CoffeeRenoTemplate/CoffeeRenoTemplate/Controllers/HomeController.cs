@@ -12,6 +12,7 @@ namespace CoffeeRenoTemplate.Controllers
     {
         public IActionResult Index()
         {
+           var a= User.Identity.Name;
             return View();
         }
 
