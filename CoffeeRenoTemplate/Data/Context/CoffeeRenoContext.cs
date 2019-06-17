@@ -9,11 +9,6 @@ namespace Data.Context
             : base(options)
         { }
 
-        public DbSet<UserLoginHistory> UserLoginHistorys { get; set; }
-        public DbSet<UserProfile> UserProfiles { get; set; }
-        public DbSet<UserRole> UserRoles { get; set; }
-        public DbSet<Role> Roles { get; set; }
-
         public DbSet<AdsType> AdsTypes { get; set; }
         public DbSet<AdsForm> AdsForms { get; set; }
         public DbSet<Image> Images { get; set; }
@@ -24,11 +19,6 @@ namespace Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UserLoginHistory>().ToTable("UserLoginHistory");
-            modelBuilder.Entity<UserProfile>().ToTable("UserProfile");
-            modelBuilder.Entity<UserRole>().ToTable("UserRole");
-            modelBuilder.Entity<Role>().ToTable("Role");
-
             modelBuilder.Entity<AdsType>().ToTable("AdsType");
             modelBuilder.Entity<AdsForm>().ToTable("AdsForm");
             modelBuilder.Entity<Image>().ToTable("Image");

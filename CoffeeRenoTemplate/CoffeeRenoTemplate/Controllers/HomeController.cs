@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using CoffeeRenoTemplate.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CoffeeRenoTemplate.Controllers
 {
+
     public class HomeController : Controller
     {
+        [Route("")]
+        [Authorize]
         public IActionResult Index()
         {
            var a= User.Identity.Name;

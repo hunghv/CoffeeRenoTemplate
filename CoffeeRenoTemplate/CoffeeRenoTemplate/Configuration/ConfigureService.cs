@@ -1,5 +1,6 @@
-﻿using AutoMapper;
-using CoffeeRenoTemplate.Data;
+﻿using System;
+using AutoMapper;
+using Data.Context;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -12,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Services.Mappings;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -30,7 +32,8 @@ namespace CoffeeRenoTemplate.Configuration
         {
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddAuthentication(options =>
                 {
@@ -72,18 +75,18 @@ namespace CoffeeRenoTemplate.Configuration
             });
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseMySQL(
-                    configuration.GetConnectionString("DefaultConnection")));
+                options.UseMySql(configuration.GetConnectionString("DefaultConnection"),
+                    mySqlOptionsAction => mySqlOptionsAction.ServerVersion(new Version(), ServerType.MySql)));
+
+            services.AddDbContext<CoffeeRenoContext>(options =>
+                options.UseMySql(configuration.GetConnectionString("DefaultConnection"),
+                    mySqlOptionsAction => mySqlOptionsAction.ServerVersion(new Version(), ServerType.MySql)));
 
             IninitAuth(services);
 
             services.AddAuthentication();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            //services.AddDbContext<CoffeeRenoContext>(options =>
-            //    options.UseMySql(configuration.GetConnectionString("DefaultConnection"),
-            //        mySqlOptionsAction => mySqlOptionsAction.ServerVersion(new Version(), ServerType.MySql)
-            //    ));
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         private static void InitSwagger(IServiceCollection services)
@@ -98,7 +101,6 @@ namespace CoffeeRenoTemplate.Configuration
                 });
             });
         }
-
         public static void InitConfig(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IConfiguration configuration)
         {
 

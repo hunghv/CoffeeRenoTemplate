@@ -1,0 +1,26 @@
+INFO  18-02-2019 00:02:15 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request starting HTTP/2.0 GET https://localhost:44381/   
+INFO  18-02-2019 00:02:15 Microsoft.AspNetCore.Routing.EndpointMiddleware [9] - Executing endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  18-02-2019 00:02:15 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [9] - Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoffeeRenoTemplate.Controllers.HomeController (CoffeeRenoTemplate). 
+INFO  18-02-2019 00:02:15 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [9] - Authorization was successful. 
+INFO  18-02-2019 00:02:15 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [9] - Executing action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) - Validation state: Valid 
+INFO  18-02-2019 00:02:15 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [9] - Executed action method CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.4651ms. 
+INFO  18-02-2019 00:02:15 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor [9] - Executing ViewResult, running view Index. 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor [9] - Executed ViewResult - view Index executed in 854.2058ms. 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [9] - Executed action CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate) in 910.9994ms 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Routing.EndpointMiddleware [9] - Executed endpoint 'CoffeeRenoTemplate.Controllers.HomeController.Index (CoffeeRenoTemplate)' 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request finished in 1167.0573ms 200 text/html; charset=utf-8 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request starting HTTP/2.0 GET https://localhost:44381/lib/bootstrap/dist/css/bootstrap.css   
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request starting HTTP/2.0 GET https://localhost:44381/css/site.css   
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request starting HTTP/2.0 GET https://localhost:44381/lib/jquery/dist/jquery.js   
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [14] - Request starting HTTP/2.0 GET https://localhost:44381/lib/bootstrap/dist/js/bootstrap.bundle.js   
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [19] - Request starting HTTP/2.0 GET https://localhost:44381/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [6] - The file /css/site.css was not modified 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [7] - The file /lib/bootstrap/dist/css/bootstrap.css was not modified 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [10] - The file /lib/jquery/dist/jquery.js was not modified 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [14] - The file /lib/bootstrap/dist/js/bootstrap.bundle.js was not modified 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [19] - The file /js/site.js was not modified 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [14] - Request finished in 83.2591ms 304 application/javascript 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 83.2825ms 304 text/css 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request finished in 85.9514ms 304 text/css 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request finished in 76.1124ms 304 application/javascript 
+INFO  18-02-2019 00:02:16 Microsoft.AspNetCore.Hosting.Internal.WebHost [19] - Request finished in 68.4478ms 304 application/javascript 

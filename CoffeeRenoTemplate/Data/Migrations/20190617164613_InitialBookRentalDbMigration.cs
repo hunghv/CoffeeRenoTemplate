@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class initialcreate : Migration
+    public partial class InitialBookRentalDbMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -71,56 +71,6 @@ namespace Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Role",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    IsDeleted = table.Column<bool>(nullable: false),
-                    CreatedDate = table.Column<DateTime>(nullable: false),
-                    CreatedBy = table.Column<int>(nullable: false),
-                    ModifiedDate = table.Column<DateTime>(nullable: true),
-                    ModifiedBy = table.Column<int>(nullable: true),
-                    DeletedDate = table.Column<DateTime>(nullable: true),
-                    DeletedBy = table.Column<int>(nullable: true),
-                    Name = table.Column<string>(maxLength: 255, nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Role", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "UserProfile",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    IsDeleted = table.Column<bool>(nullable: false),
-                    CreatedDate = table.Column<DateTime>(nullable: false),
-                    CreatedBy = table.Column<int>(nullable: false),
-                    ModifiedDate = table.Column<DateTime>(nullable: true),
-                    ModifiedBy = table.Column<int>(nullable: true),
-                    DeletedDate = table.Column<DateTime>(nullable: true),
-                    DeletedBy = table.Column<int>(nullable: true),
-                    UserName = table.Column<string>(maxLength: 50, nullable: true),
-                    Password = table.Column<string>(maxLength: 50, nullable: true),
-                    ConfirmPassword = table.Column<string>(maxLength: 50, nullable: true),
-                    DisplayName = table.Column<string>(maxLength: 255, nullable: true),
-                    Email = table.Column<string>(maxLength: 100, nullable: true),
-                    NickName = table.Column<string>(maxLength: 50, nullable: true),
-                    ThumbnailPhoto = table.Column<byte[]>(nullable: true),
-                    Domain = table.Column<string>(nullable: true),
-                    ReceiveEmail = table.Column<bool>(nullable: true),
-                    Active = table.Column<bool>(nullable: true),
-                    TelephoneNumber = table.Column<string>(maxLength: 30, nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserProfile", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AdsForm",
                 columns: table => new
                 {
@@ -144,68 +94,6 @@ namespace Data.Migrations
                         name: "FK_AdsForm_AdsType_AdsTypeId",
                         column: x => x.AdsTypeId,
                         principalTable: "AdsType",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "UserLoginHistory",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    IsDeleted = table.Column<bool>(nullable: false),
-                    CreatedDate = table.Column<DateTime>(nullable: false),
-                    CreatedBy = table.Column<int>(nullable: false),
-                    ModifiedDate = table.Column<DateTime>(nullable: true),
-                    ModifiedBy = table.Column<int>(nullable: true),
-                    DeletedDate = table.Column<DateTime>(nullable: true),
-                    DeletedBy = table.Column<int>(nullable: true),
-                    UserId = table.Column<int>(nullable: false),
-                    AccessToken = table.Column<Guid>(nullable: false),
-                    IsLoggedOut = table.Column<bool>(nullable: false),
-                    IsAppToken = table.Column<bool>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserLoginHistory", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_UserLoginHistory_UserProfile_UserId",
-                        column: x => x.UserId,
-                        principalTable: "UserProfile",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "UserRole",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    IsDeleted = table.Column<bool>(nullable: false),
-                    CreatedDate = table.Column<DateTime>(nullable: false),
-                    CreatedBy = table.Column<int>(nullable: false),
-                    ModifiedDate = table.Column<DateTime>(nullable: true),
-                    ModifiedBy = table.Column<int>(nullable: true),
-                    DeletedDate = table.Column<DateTime>(nullable: true),
-                    DeletedBy = table.Column<int>(nullable: true),
-                    UserProfileId = table.Column<int>(nullable: false),
-                    RoleId = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserRole", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_UserRole_Role_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "Role",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_UserRole_UserProfile_UserProfileId",
-                        column: x => x.UserProfileId,
-                        principalTable: "UserProfile",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -246,12 +134,6 @@ namespace Data.Migrations
                         name: "FK_Post_PostType_PostTypeId",
                         column: x => x.PostTypeId,
                         principalTable: "PostType",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Post_UserProfile_UserProfileId",
-                        column: x => x.UserProfileId,
-                        principalTable: "UserProfile",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -305,11 +187,6 @@ namespace Data.Migrations
                 column: "PostTypeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Post_UserProfileId",
-                table: "Post",
-                column: "UserProfileId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_PostImage_ImageId",
                 table: "PostImage",
                 column: "ImageId");
@@ -318,21 +195,6 @@ namespace Data.Migrations
                 name: "IX_PostImage_PostId",
                 table: "PostImage",
                 column: "PostId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserLoginHistory_UserId",
-                table: "UserLoginHistory",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserRole_RoleId",
-                table: "UserRole",
-                column: "RoleId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserRole_UserProfileId",
-                table: "UserRole",
-                column: "UserProfileId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -341,28 +203,16 @@ namespace Data.Migrations
                 name: "PostImage");
 
             migrationBuilder.DropTable(
-                name: "UserLoginHistory");
-
-            migrationBuilder.DropTable(
-                name: "UserRole");
-
-            migrationBuilder.DropTable(
                 name: "Image");
 
             migrationBuilder.DropTable(
                 name: "Post");
 
             migrationBuilder.DropTable(
-                name: "Role");
-
-            migrationBuilder.DropTable(
                 name: "AdsForm");
 
             migrationBuilder.DropTable(
                 name: "PostType");
-
-            migrationBuilder.DropTable(
-                name: "UserProfile");
 
             migrationBuilder.DropTable(
                 name: "AdsType");

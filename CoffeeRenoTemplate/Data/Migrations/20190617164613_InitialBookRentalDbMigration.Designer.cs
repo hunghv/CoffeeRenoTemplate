@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(CoffeeRenoContext))]
-    [Migration("20190614135250_initial-create")]
-    partial class initialcreate
+    [Migration("20190617164613_InitialBookRentalDbMigration")]
+    partial class InitialBookRentalDbMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -156,8 +156,6 @@ namespace Data.Migrations
 
                     b.HasIndex("PostTypeId");
 
-                    b.HasIndex("UserProfileId");
-
                     b.ToTable("Post");
                 });
 
@@ -223,152 +221,6 @@ namespace Data.Migrations
                     b.ToTable("PostType");
                 });
 
-            modelBuilder.Entity("Data.Entities.Role", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("CreatedBy");
-
-                    b.Property<DateTime>("CreatedDate");
-
-                    b.Property<int?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedDate");
-
-                    b.Property<bool>("IsDeleted");
-
-                    b.Property<int?>("ModifiedBy");
-
-                    b.Property<DateTime?>("ModifiedDate");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(255);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Role");
-                });
-
-            modelBuilder.Entity("Data.Entities.UserLoginHistory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<Guid>("AccessToken");
-
-                    b.Property<int>("CreatedBy");
-
-                    b.Property<DateTime>("CreatedDate");
-
-                    b.Property<int?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedDate");
-
-                    b.Property<bool>("IsAppToken");
-
-                    b.Property<bool>("IsDeleted");
-
-                    b.Property<bool>("IsLoggedOut");
-
-                    b.Property<int?>("ModifiedBy");
-
-                    b.Property<DateTime?>("ModifiedDate");
-
-                    b.Property<int>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserLoginHistory");
-                });
-
-            modelBuilder.Entity("Data.Entities.UserProfile", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<bool?>("Active");
-
-                    b.Property<string>("ConfirmPassword")
-                        .HasMaxLength(50);
-
-                    b.Property<int>("CreatedBy");
-
-                    b.Property<DateTime>("CreatedDate");
-
-                    b.Property<int?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedDate");
-
-                    b.Property<string>("DisplayName")
-                        .HasMaxLength(255);
-
-                    b.Property<string>("Domain");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(100);
-
-                    b.Property<bool>("IsDeleted");
-
-                    b.Property<int?>("ModifiedBy");
-
-                    b.Property<DateTime?>("ModifiedDate");
-
-                    b.Property<string>("NickName")
-                        .HasMaxLength(50);
-
-                    b.Property<string>("Password")
-                        .HasMaxLength(50);
-
-                    b.Property<bool?>("ReceiveEmail");
-
-                    b.Property<string>("TelephoneNumber")
-                        .HasMaxLength(30);
-
-                    b.Property<byte[]>("ThumbnailPhoto");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(50);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("UserProfile");
-                });
-
-            modelBuilder.Entity("Data.Entities.UserRole", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("CreatedBy");
-
-                    b.Property<DateTime>("CreatedDate");
-
-                    b.Property<int?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedDate");
-
-                    b.Property<bool>("IsDeleted");
-
-                    b.Property<int?>("ModifiedBy");
-
-                    b.Property<DateTime?>("ModifiedDate");
-
-                    b.Property<int>("RoleId");
-
-                    b.Property<int>("UserProfileId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
-
-                    b.HasIndex("UserProfileId");
-
-                    b.ToTable("UserRole");
-                });
-
             modelBuilder.Entity("Data.Entities.AdsForm", b =>
                 {
                     b.HasOne("Data.Entities.AdsType", "AdsType")
@@ -388,11 +240,6 @@ namespace Data.Migrations
                         .WithMany("Posts")
                         .HasForeignKey("PostTypeId")
                         .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Data.Entities.UserProfile", "UserProfile")
-                        .WithMany("Posts")
-                        .HasForeignKey("UserProfileId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Data.Entities.PostImage", b =>
@@ -405,27 +252,6 @@ namespace Data.Migrations
                     b.HasOne("Data.Entities.Post", "Post")
                         .WithMany("PostImages")
                         .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("Data.Entities.UserLoginHistory", b =>
-                {
-                    b.HasOne("Data.Entities.UserProfile", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("Data.Entities.UserRole", b =>
-                {
-                    b.HasOne("Data.Entities.Role", "Role")
-                        .WithMany("UserRoles")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Data.Entities.UserProfile", "UserProfile")
-                        .WithMany("UserRoles")
-                        .HasForeignKey("UserProfileId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
