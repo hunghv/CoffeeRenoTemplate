@@ -10,7 +10,7 @@ namespace CoffeeRenoTemplate.Controllers
     public class HomeController : Controller
     {
         [Route("")]
-        [Authorize]
+       // [Authorize]
         public IActionResult Index()
         {
            var a= User.Identity.Name;
